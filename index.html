@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+</head>
+
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1"></p>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.w3-row-padding img {margin-bottom: 12px}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link { 
+  color:#60391A;
+  text-decoration: none;
+  background-color: #FAEADD;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-large " style="background-color: #547F30; color: #ffffff">
+<div class="w3-col" style="width:20%"><a class="w3-button w3-block" href="#">Indice</a></div>
+
+<div class="w3-col" style="width:20%"><a class="w3-button w3-block" href="#nosotros">Nosotros</a></div>
+
+<div class="w3-col" style="width:20%"><a class="w3-button w3-block" href="#servicios">Servicios</a></div>
+
+<div class="w3-col" style="width:20%"><a class="w3-button w3-block" href="#galeria">Galeria</a></div>
+
+<div class="w3-col" style="width:20%"><a class="w3-button w3-block" href="#contacto">Contacto</a></div>
+</div>
+</div>
+<!-- Content -->
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+<div class="w3-panel">
+<div class="w3-left">
+<h1><img class="w3-image" src="images/logo.png" /></h1>
+</div>
+    <div class="w3-right">
+      <br>
+      <br>
+      <p><i class="fa fa-whatsapp" ></i> Whatsapp: <a href="https://wa.me/56952190733?"> + 569 5219 0733</a></p>
+      <p><i class="fa fa-envelope" ></i> Mail: <a href="mailto:lsoto@mipodologo.cl"> lsoto@mipodologo.cl</a></p>
+      <p><i class="fa fa-phone" ></i> Telefono: <a href="tel:+56952190733"> + 569 5219 0733</a></p>
+    </div>
+</div>
+
+<div class="w3-panel w3-center">
+<h1><span><strong>Podolog&iacute;a </strong></span><strong>Cl&iacute;nica</strong><span><strong> a Domicilio</strong></span></h1>
+</div>
+
+<hr style="border: 10px solid green; border-radius: 10px;" /><!-- Slideshow -->
+<div class="w3-content w3-section" style="max-width:1000px"><img class="mySlides w3-animate-right" src="images/portada1.jpg" style="width:100%" /> <img class="mySlides w3-animate-right" src="images/portada2.jpg" style="width:100%" /></div>
+
+<div class="w3-row-padding" id="nosotros">
+<div class="w3-margin-bottom">
+<div class="w3-card-4">
+<div class="w3-container">
+<hr style="border: 10px solid green; border-radius: 10px;" />
+<h3 style="text-align: center;"><strong><span style="color:#009933;"></span><span style="font-size:36px;"><span style="font-family:verdana,geneva,sans-serif;"><span>PODOLOG&Iacute;A</span> A <span>DOMICILIO</span></span></span></strong></h3>
+
+<center><p><span style="color:#547F30;"><strong>________________________________________________</strong></span></p></center>
+
+<ul>
+	<li><span style="font-size:22px;"><strong><span style="color:#009933;"><img alt="" src="images/pie-diabetico.jpg" style="width: 380px; float: left; height: 280px;" /><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</em></span><em>•CORTE CORRECTO DE U&Ntilde;AS.</em></strong></span></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•ONICOCRIPTOSIS ( U&Ntilde;A INCARNADA).</strong></span></em></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•TRATAMIENTO DE ONICOMICOSIS (HONGOS).</strong></span></em></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•REMOCION DE QUERATOSIS ( HELOMAS, DUREZAS).</strong></span></em></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•PIE DIABETICO.</strong></span></em></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•PLANTILLAS ORTOPEDICAS.</strong></span></em></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•BRAQUETS.</strong></span></em></li>
+	<li><em><span style="font-size:22px;"><strong><span style="color:#009933;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>•MASOTERAPIA.</strong></span></em></li>
+</ul>
+<br><br>
+<center><p><span style="color:#547F30;"><strong>________________________________________________</strong></span></p></center>
+
+<p style="text-align: center;"><em><span><strong><span style="font-size:20px;">&quot;Un pie sano, para caminar feliz&quot;</span></strong></span></em></p>
+
+<p style="text-align: center;"><em><span style="color:#547F30;"><strong><span style="font-size:20px;"><img alt="" src="/e77cfff8-396f-41ba-93cd-34a0ac4ab69d.jpg" style="width: 950px; height: 534px;" /></span></strong></span></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="w3-row-padding" id="nosotros">
+<div class="w3-center w3-padding-64"><span><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Nuestras Herramientas de Trabajo</span></span></div>
+
+<img src="images/herramientas.png"/>
+<img src="images/instrumentos.png"/>
+<div class="w3-margin-bottom">
+<div class="w3-card-4">
+<div class="w3-container">
+
+</div>
+</div>
+</div>
+</div>
+<div class="w3-row-padding" id="nosotros">
+<div class="w3-center w3-padding-64"><span style="color:#547F30;"><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Quienes Somos</span></span></div>
+
+<div class="w3-margin-bottom">
+<div class="w3-card-4">
+<div class="w3-container">
+<p><em><span><strong><span style="font-size:20px;">&quot;Un pie sano, para caminar feliz&quot;</span></strong></span></em></p>
+
+<h5 style="text-align: justify;"><strong><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Servicio en donde se atiende de manera confiable , segura, y por sobre todo en la comodidad de su hogar, donde nosotros llevamos nuestra experiencia y profesionalismo a su domicilio.</span></span></strong></h5>
+
+<p style="text-align: justify;"></p>
+
+<p style="text-align: justify;"><span style="color:#547F30;"><strong>__________________________________________________________________________________________________________________________________________________________________________________</strong></span></p>
+
+<p class="w3-opacity" style="text-align: justify;"><span style="font-family:arial,helvetica,sans-serif;"><span style="color:#547F30;"><strong><u><span style="font-size:18px;">Misi&oacute;n</span></u></strong></span><span style="color:#000000;"><strong><u>:</u></strong></span></span></p>
+
+<p style="text-align: justify;"><strong><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:14px;">Nuestra misi&oacute;n , es proporcionar una atenci&oacute;n de excelencia, concreta y especializada , realizando tratamientos adecuados , poniendo en practica nuestros conocimientos , para mejorar la calidad de vida de la comunidad.</span></span></strong></p>
+
+<p style="text-align: justify;"><span style="color:#547F30;"><strong>_________________________________________________________________________________________________________________________________________________________________________________</strong></span></p>
+
+<p class="w3-opacity" style="text-align: justify;"><span style="font-size:18px;"><span style="font-family:arial,helvetica,sans-serif;"><strong><span style="color:#547F30;"><u>Visi&oacute;n</u></span>:</strong></span></span></p>
+
+<p style="text-align: justify;"><strong><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:14px;">Ser reconocidos como la mejor alternativa en atenci&oacute;n, perfeccionando e investigando nuevas t&eacute;cnicas y procedimientos que sean pioneros en mejorar las experiencias de los pacientes.</span></span></strong></p>
+
+<p></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Grid -->
+
+<div class="w3-row-padding" id="servicios">
+<div class="w3-center w3-padding-64"><span><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Servicios</span></span></div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/Imagen1.png" width="280" />
+<h3>CORTE CORRECTO<br />
+DE U&Ntilde;AS</h3>
+
+<p>Es vital poner atenci&oacute;n al corte de u&ntilde;as a cualquier edad, tanto infantil, adulta o avanzada.<br />
+<br />
+Cada etapa de la vida va a conllevar diferentes cambios en las u&ntilde;as y con ello, diferentes cuidados y necesidades.<br />
+<br />
+Para ello en cada atenci&oacute;n nuestra misi&oacute;n es educar y prevenir cualquier alteraci&oacute;n a la lamina Unguial.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30;color: #ffffff"><br />
+<img height="220" src="images/Imagen2.png" width="280" />
+<h3>ONICOCRIPTOSIS ( U&Ntilde;A INCARNADA)</h3>
+
+<p>La u&ntilde;a incarnada u onicocriptosis (tambi&eacute;n llamada err&oacute;neamente u&ntilde;a &quot;encarnada&quot;) es una afecci&oacute;n que aparece cuando un borde de la u&ntilde;a del pie penetra la piel del dedo produciendo dolor, enrojecimiento e inflamaci&oacute;n, ya que act&uacute;a como si de un cuerpo extra&ntilde;o se tratase.<br />
+<br />
+Esta patolog&iacute;a afecta com&uacute;nmente al dedo gordo, pero se puede presentar en cualquiera de ellos.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/Imagen3.png" width="280" />
+<h3>TRATAMIENTO DE ONICOMICOSIS (HONGOS)</h3>
+
+<p>La onicomicosis es una infecci&oacute;n por hongos y se trata de la enfermedad que m&aacute;s frecuentemente puede afectar a las u&ntilde;as de los humanos, siendo responsable de m&aacute;s de la mitad de los casos de alteraci&oacute;n ungueal. La onicomicosis es un proceso frecuentemente asintom&aacute;tico, aunque en ocasiones puede producir molestias o dolor, especialmente en el momento de recortarse las u&ntilde;as o realizar ejercicio f&iacute;sico</p>
+
+<p>Es muy importante diagnosticar la onicomicosis y realizar un tratamiento de eliminaci&oacute;n en la mayor brevedad. Existen varias formas de tratamiento y eliminaci&oacute;n de los hongos de las u&ntilde;as.</p>
+</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/queratosis.jpg" width="280" />
+<h3>REMOCION DE<br />
+QUERATOSIS<br />
+( HELOMAS, DUREZAS)</h3>
+&nbsp;
+
+<p>Nuestro servicio de remoci&oacute;n de Hiperqueratosis es un tratamiento podol&oacute;gico que consiste en la eliminaci&oacute;n de callosidades, deslaminando capa por capa y pulido con micromotor, para terminar con una suave y reconfortante hidrataci&oacute;n.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/pie-diabetico.jpg" width="280" />
+<h3>PIE DIABETICO</h3>
+
+<p>El pie diab&eacute;tico es una alteraci&oacute;n cl&iacute;nica que se produce por mantener unos niveles de glucosa m&aacute;s elevados de lo habitual. Se caracteriza por:</p>
+
+<p>Una disminuci&oacute;n de la sensibilidad en el pie (neuropat&iacute;a).</p>
+
+<p>Una disminuci&oacute;n de la circulaci&oacute;n de la sangre (isquemia).</p>
+
+<p>Ambos factores pueden predisponer la aparici&oacute;n de una ulceraci&oacute;n en el pie.</p>
+
+<p>En pacientes con diabetes, una peque&ntilde;a herida a la que podr&iacute;amos no darle importancia puede ser el punto de partida de una posible infecci&oacute;n. Por ello, te aconsejamos que acudas al pod&oacute;logo si es necesario para evitar este tipo de problemas. Puede parecer algo banal pero no lo es.</p>
+<br />
+&nbsp;</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/plantilla.jpg" width="280" />
+<h3>PLANTILLAS ORTOPEDICAS</h3>
+&nbsp;
+
+<p>La funci&oacute;n principal de una plantilla ortop&eacute;dica es la distribuci&oacute;n de presiones plantares de forma que evite exceso de carga sobre los tejidos del pie.<br />
+<br />
+<br />
+<br />
+Para ello realizamos un estudio Biomec&aacute;nico y Pedigrafico para confeccionar plantillas con materiales c&oacute;modos y de alta calidad.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/Imagen4.png" width="280" />
+<h3>BRACKETS</h3>
+
+<p>Brackets para las u&ntilde;as de los dedos de los pies, espec&iacute;ficamente para tratar o evitar&nbsp;las u&ntilde;as Incarnadas, es un sistema que va a en constante crecimiento.</p>
+
+<p>Expertos se&ntilde;alan que este llamativo m&eacute;todo es&nbsp;muy efectivo&nbsp;para tratar a&nbsp;las personas que sufren los dolores de una u&ntilde;a Incarnada&nbsp;y apuntan a&nbsp;evitar otros problemas relacionados a los pies como:&nbsp;sobrepeso,&nbsp;hiperhidrosis, Diabetes Mellitus&nbsp;y m&aacute;s.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;</div>
+</div>
+</div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+<div class="w3-container">
+<div class="w3-container w3-round w3-card-4" style="background-color: #547F30; color: #ffffff"><br />
+<img height="220" src="images/s (1).jpg" width="280" />
+<h3>MASOTERAPIA</h3>
+
+<p>Es una terapia manual que utiliza diferentes t&eacute;cnicas de masaje para el tratamiento de los pies. El procedimiento se aplica a los tejidos blandos: piel, m&uacute;sculo y tejido conjuntivo; para mejorar su funci&oacute;n, activar la circulaci&oacute;n, promover la relajaci&oacute;n y el bienestar general.Los m&uacute;sculos y los ligamentos son los encargados de mantener la estructura &oacute;sea del pie, en su correcta posici&oacute;n y funcionamiento. Si mantenemos el pie en una posici&oacute;n forzada o lo sometemos a esfuerzos extremos, provocamos una atrofia en el m&uacute;sculo Y , por tanto, la deformaci&oacute;n de la estructura plantar y la acumulaci&oacute;n de &aacute;cido l&aacute;ctico, responsable principal del cansancio y del dolor.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Grid -->
+
+<div class="w3-row-padding" id="galeria">
+<div class="w3-center w3-padding-64"><span style="color:#547F30;"><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Galeria</span></span></div>
+<!-- Photo Grid -->
+
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (1).jpg" style="width:100%" /></div>
+
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (2).jpg" style="width:100%" /></div>
+
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (3).jpg" style="width:100%" /></div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (4).jpg" style="width:100%" /></div>
+
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (1).jpeg" style="width:100%" /></div>
+
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (2).jpeg" style="width:100%" /></div>
+</div>
+
+<div class="w3-row-padding w3-section w3-stretch">
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/queratosis.jpg" style="width:100%" /></div>
+
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/s (4).jpeg" style="width:100%" /></div>
+
+<div class="w3-col s4"><img class="myImages" id="myImg" src="images/portada1.jpg" style="width:100%" /></div>
+</div>
+<!-- The Modal -->
+
+<div class="modal" id="myModal"><span class="close">&times;</span> <img class="modal-content" id="img01" />
+<div id="caption"></div>
+</div>
+</div>
+<!-- Contact -->
+
+<div class="w3-center w3-padding-64" id="contacto"><span style="color:#547F30;"><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contactenos</span></span></div>
+
+  <div class="w3-row w3-container">
+    <div class="w3-half">
+      <span class="w3-xlarge w3-padding" style="margin-left: 30%">A nuestro Whatsapp</span>
+      <a href="https://wa.me/56952190733?">
+        <h1>
+          <i class="fa fa-whatsapp w3-jumbo" style="margin-left: 50%"></i>
+        </h1>
+      </a>
+    </div>
+    <div class="w3-half">
+      <span class="w3-xlarge w3-padding" style="margin-left: 40%">O llamenos</span>
+      <a href="tel:+56952190733">
+        <h1>
+          <i class="fa fa-phone w3-jumbo" style="margin-left: 50%"></i>
+        </h1>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center"><a class="w3-button w3-black w3-margin" href="#">Volver al inicio.</a>
+
+<div class="w3-content w3-section" style="max-width:1000px; text-align:center;">
+<p><a class="w3-bar-item w3-button w3-padding" href="#"><small>Creado por Infographics Solutions.</small></a><a class="w3-bar-item w3-button w3-border-left w3-padding" href="#"><small>Luis E. Soto Meza - </small></a><a class="w3-bar-item w3-button w3-border-left w3-padding" href="https://api.whatsapp.com/send?phone=56952190733&amp;text=Hola%20..%20en%20que%20podemos%20ayudarte?"><small>Tel: +569 5219 0733</small></a></p>
+</div>
+</footer>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script><script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
